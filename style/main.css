@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&display=swap');
+
+:root{
+    --darkgreen: #172621;
+    --lightorange: #F2C063;
+    --lightyellow: #f7ebb3;
+    --black: #070D0B;
+    --brown: #A68A58;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', sans-serif;
+}
+
+body{
+    background: var(--lightyellow);
+}
+
+.nav-title{
+    color: var(--lightorange);
+    font-family: 'Bangers', sans-serif;
+    font-size: 3rem;
+    margin-left: 5px;
+}
+
+.container {
+    background-color: var(--darkgreen);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: var(--lightyellow);
+}
