@@ -15,18 +15,26 @@
     font-family: 'Koulen', sans-serif;
 }
 
+/* elementos base */
+
 body{
     background: var(--lightyellow);
+    color: var(--black);
 }
 
 .nav-title{
     color: var(--lightorange);
     font-family: 'Bangers', sans-serif;
     font-size: 3rem;
-    margin-left: 5px;
+    margin-left: 4%;
+
 }
 
-.container {
+.title-2{
+    color: var(--lightyellow);
+}
+
+.nav-container {
     background-color: var(--darkgreen);
     padding: 15px;
     display: flex;
@@ -40,8 +48,77 @@ nav a {
     font-size: 1.5rem;
     color: white;
     margin-right: 10px;
+    transition: .3s ease all;
 }
 
 nav a:hover {
     color: var(--lightyellow);
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/drstrange-poster.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    color: var(--lightyellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description {
+    margin-bottom: 90px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.title-main {
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.button {
+    background-color: rgba(105, 105, 105, 0.5);
+    border: none;
+    color: var(--lightyellow);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 18px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: var(--brown);
+    color: white;
+}
+ .button i {
+     margin-right: 5px;
+ }
+
+.main-container {
+    margin-left: 4%;
+    padding: 15px;
+    overflow: auto;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 10px;
+}
+
+.carousel-titles{
+    margin-left: 4%;
+    color: var(--darkgreen);
+    margin-top: 10px;
 }
